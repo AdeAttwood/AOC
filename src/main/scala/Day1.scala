@@ -7,7 +7,7 @@ import scala.collection.mutable.ListBuffer
   * @see
   *   https://adventofcode.com/2023/day/1
   */
-object Day1 {
+object Day1 extends Day {
 
   var WORD_MAP = Map(
     "1"     -> 1,
@@ -68,9 +68,8 @@ object Day1 {
   }
 
   def run(): Unit = {
-    var source  = Source.fromResource("day1.input")
-    var partOne = this.sumFile(source)
-    var partTwo = this.sumFileWithWords(source)
+    var partOne = this.sumFile(Source.fromResource("day1.input"))
+    var partTwo = this.sumFileWithWords(Source.fromResource("day1.input"))
 
     println(s"Part One: $partOne")
     println(s"Part Two: $partTwo")
