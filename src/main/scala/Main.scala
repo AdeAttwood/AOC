@@ -6,6 +6,7 @@
     case 4 => Day4
     case 5 => Day5
     case 6 => Day6
+    case 8 => Day8
 
   day.run()
 }
