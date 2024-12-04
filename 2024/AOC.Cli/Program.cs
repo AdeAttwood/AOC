@@ -2,7 +2,12 @@
 
 class Cli
 {
-    private static readonly List<IDay> _days = new List<IDay> { new Day1(), new Day2() };
+    private static readonly List<IDay> _days = new List<IDay>
+    {
+        new Day1(),
+        new Day2(),
+        new Day3()
+    };
 
     public static int Main(string[] args)
     {
